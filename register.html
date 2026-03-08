@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="icon" href="./img/title img.jpeg" />
+    <link rel="stylesheet" href="./css/styleregister.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    <div class="wrapper">
+      <form action="" id="form">
+        <h2>Register</h2>
+        <div class="form-content">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Erwin smith" id="name" />
+          <span id="nameerr" class="err"></span>
+
+          <label for="email">Email</label>
+          <input type="email" placeholder="Ex. abc@gmail.com" id="email" />
+          <span id="emailerr" class="err"></span>
+
+          <label for="phone">Phone</label>
+          <input type="number" placeholder="Ex. 1234567890" id="phone" />
+          <span id="numerr" class="err"></span>
+
+          <label for="pwd">Password</label>
+          <div class="icons">
+            <input
+              type="password"
+              placeholder="at least 8 characters"
+              id="pwd"
+            />
+            <i class="fa-regular fa-eye-slash"></i>
+          </div>
+
+          <span id="pwderr" class="err"></span>
+          <label for="cpwd">Confirm Password</label>
+
+          <div class="icons">
+            <input
+              type="password"
+              placeholder="at least 8 characters"
+              id="cpwd"
+            />
+            <i class="fa-regular fa-eye-slash"></i>
+          </div>
+          <span id="cpwderr" class="err"></span>
+        </div>
+        <button type="submit">Register</button>
+        <p>Have already an Acccount? <a href="./index.html">Login here</a></p>
+      </form>
+    </div>
+    <script src="./js/register.js"></script>
+  </body>
+</html>

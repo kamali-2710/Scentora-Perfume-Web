@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./css/styledb.css" />
+    <link rel="stylesheet" href="./css/styleproduct.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="home">
+          <i class="fa-solid fa-bars" id="menu"></i>
+          <a href="./dashboard.html">Home</a>
+        </div>
+        <div class="timer">
+          <span id="hour">00</span> : <span id="min">00</span> :
+          <span id="sec">00</span> : <span id="time">AM</span>
+        </div>
+      </header>
+
+      <aside>
+        <div class="profile">
+          <img src="./img/profile.jpg" alt="" />
+        </div>
+        <h3>Admin</h3>
+        <ul>
+          <li>
+            <a href="./dashboard.html">
+              <i class="fa-solid fa-house" style="color: white"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="./category.html">
+              <i class="fa-solid fa-list" style="color: white"></i>
+              <span>Category</span>
+            </a>
+          </li>
+          <li>
+            <a href="./products.html">
+              <i class="fa-solid fa-bag-shopping" style="color: white"></i>
+              <span>Products</span>
+            </a>
+          </li>
+          <li>
+            <a href="./customer.html">
+              <i class="fa-solid fa-users" style="color: white"></i>
+              <span>Customer</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="logout()">
+              <i
+                class="fa-solid fa-arrow-right-from-bracket"
+                style="color: white"
+              ></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="icons">
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://in.linkedin.com/"
+            ><i class="fa-brands fa-square-linkedin"></i
+          ></a>
+        </div>
+      </aside>
+      <main>
+        <form id="Productform">
+          <h2>Products Form</h2>
+          <input type="hidden" id="productid" />
+          <label for="img" class="name">Image URL</label>
+          <input type="url" placeholder="Enter image url" id="img" /><br />
+          <span id="imgerr" class="err"></span> <br />
+
+          <label for="prd">Product Name</label>
+          <input type="text" placeholder="Product Name" id="prd" /><br />
+          <span id="prderr" class="err"></span> <br />
+
+          <label for="cgy">Category</label>
+          <select id="cgy">
+            <option value="">-- Select Category --</option></select
+          ><br />
+          <span id="cgyerr" class="err"></span> <br />
+
+          <label for="prc">Price</label>
+          <input type="number" placeholder="Enter Price" id="prc" /><br />
+          <span id="prcerr" class="err"></span> <br />
+
+          <label for="stk">Stock</label>
+          <input type="number" placeholder="Enter Stock Quantity" id="stk" />
+          <br />
+          <span id="stkerr" class="err"></span> <br />
+
+          <label for="offer">Offer Price</label>
+          <input type="number" placeholder="Offer Price" id="offer" /> <br />
+          <span id="offererr" class="err"></span>
+
+          <button type="submit" id="submitbtn">Submit</button>
+          <button type="submit" id="updatebtn" style="display: none">
+            Update
+          </button>
+        </form>
+        <table>
+          <tr>
+            <th>S.No</th>
+            <th>Product Id</th>
+            <th>Product img</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Offer</th>
+            <th>Action</th>
+          </tr>
+          <tbody id="productdata"></tbody>
+        </table>
+      </main>
+      <footer>
+        <p>© 2026 Kamali Muruganantham. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="./js/products.js"></script>
+  </body>
+</html>

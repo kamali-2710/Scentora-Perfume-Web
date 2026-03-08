@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scentora-Login Page</title>
+    <link rel="icon" href="./img/title img.jpeg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="loginform">
+        <h2>login</h2>
+        <div class="form-content">
+          <label for="">Email</label>
+          <input
+            type="email"
+            placeholder="Ex. abc@gmail.com"
+            id="gmail"
+          /><br />
+          <span id="gmailerr" class="errs"></span>
+          <label for="">Password</label>
+          <input type="password" placeholder="Password" id="pswd" /><br />
+          <span id="pswderr" class="errs"></span>
+        </div>
+        <button type="submit">Login</button>
+        <p>
+          Don't have an Acccount?
+          <a href="./register.html">Register</a>
+        </p>
+        <h5>
+          Are you an Admin?
+          <a href="../Admin panel/adminlogin.html">Login here</a>
+        </h5>
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warranty Page</title>
+    <link rel="icon" href="./img/title img.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/warranty.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- home-page -->
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-spray-can-sparkles"></i>
+          <p>Scentora</p>
+        </div>
+        <div class="link">
+          <a href="./home.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <nav>
+          <i
+            class="fa-solid fa-cart-arrow-down"
+            onclick="window.location.href = 'cart.html'"
+          >
+            <span id="cartCount">0</span>
+          </i>
+
+          <i class="fa-solid fa-heart"></i>
+          <div class="cart">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a href="#" onclick="logout(event)">Logout</a>
+          </div>
+        </nav>
+      </header>
+      <section class="warranty">
+        <h1 class="title">Perfume Guarantee Exchange Service</h1>
+
+        <div class="warranty-box-container">
+          <div class="warranty-box">
+            <h3>What is Perfume Guarantee?</h3>
+            <p>
+              Finding the right perfume isn't always easy. That’s why we’ve
+              created Perfume Guarantee, the fuss-free way to exchange your
+              perfume if you're not completely satisfied with your online
+              purchase.
+            </p>
+          </div>
+
+          <div class="warranty-box">
+            <h3>What are the conditions for exchange?</h3>
+            <p>
+              Exchange is subject to safe return of goods. Please ensure
+              products are packed properly and returned in original condition
+              with packaging.
+            </p>
+          </div>
+
+          <div class="warranty-box">
+            <h3>What products are excluded?</h3>
+            <p>
+              Sets, travel sizes, home fragrances, bath & body products and
+              promotional items are not eligible for exchange.
+            </p>
+          </div>
+
+          <div class="warranty-box">
+            <h3>Where should I send my return?</h3>
+            <p>
+              Please submit your Perfume Guarantee Form and our team will
+              contact you with complete return instructions.
+            </p>
+          </div>
+
+          <div class="warranty-box">
+            <h3>Can I exchange for a perfume of different price?</h3>
+            <p>
+              Yes! You can exchange for a fragrance of equal or higher value. If
+              there is a balance amount, we will inform you by email.
+            </p>
+          </div>
+
+          <div class="warranty-box">
+            <h3>Can I keep my Perfume Guarantee sample?</h3>
+            <p>
+              Yes! Your Perfume Guarantee sample is complimentary and you may
+              keep it.
+            </p>
+          </div>
+
+          <div class="warranty-box">
+            <h3>Is there a cost to return?</h3>
+            <p>
+              Return shipping charges are applicable and depend on your delivery
+              location.
+            </p>
+          </div>
+
+          <div class="warranty-box">
+            <h3>Can I get more samples?</h3>
+            <p>Additional samples may be included depending on availability.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- footerdetail page -->
+      <section class="contactpage">
+        <div class="contact">
+          <div class="address">
+            <h4>Scentora</h4>
+            <p>
+              Address: 24, Anna Salai, T. Nagar, Chennai 600017.<br />
+              Phone: +91 9768347883<br />
+              Email: Scentora@gmail.com
+            </p>
+            <div class="icons">
+              <a href="https://www.facebook.com/"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://web.whatsapp.com/"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="link">
+            <h4>Quick Links</h4>
+            <a href="./home.html"><p>Home</p></a>
+            <a href="./about.html"><p>About Us</p></a>
+          </div>
+          <div class="support">
+            <h4>Support</h4>
+            <a href="./faq.html"><p>FAQ</p></a>
+            <a href="./warranty.html"><p>Warranty</p></a>
+            <a href="./contact.html"><p>Contact Us</p></a>
+          </div>
+          <div class="sub">
+            <h4>Join The Newsletter</h4>
+            <p>
+              Get E-mail updates about our latest shop <br />
+              and special offers.
+            </p>
+            <input
+              type="email"
+              placeholder="Enter your Email"
+              id="sub_email"
+              class="email"
+            />
+            <p class="errs" id="error"></p>
+            <button class="btns" id="sub_btn">Subscribe</button>
+          </div>
+        </div>
+      </section>
+      <!-- footerpage -->
+      <div class="footerpage">
+        <p>© 2025 Scentora | All Rights Reserved</p>
+
+        <div class="pay">
+          <img src="./img/pngwing.com (2).png" alt="" />
+          <img src="./img/paypal (1).png" alt="Paypal" class="img4" />
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

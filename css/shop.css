@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+.navshop {
+    /* border: 1px solid red; */
+ padding-top:120px;
+}
+.wrapper .contactpage {
+    margin-top: 20px;
+}
+} 
+@media (max-width: 576px) {
+.wrapper .cardpage {
+    margin: 0px 0px 70px;
+}
+
+}

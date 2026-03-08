@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="icon" href="./img/title img.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- HEADER SAME AS HOME -->
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-spray-can-sparkles"></i>
+          <p>Scentora</p>
+        </div>
+        <div class="link">
+          <a href="./home.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <nav>
+          <i
+            class="fa-solid fa-cart-arrow-down"
+            onclick="window.location.href = 'cart.html'"
+          >
+            <span id="cartCount">0</span>
+          </i>
+          <i class="fa-solid fa-heart"></i>
+          <div class="cart">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a href="" onclick="logout()">Logout</a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- CART ITEMS DYNAMICALLY LOADED -->
+      <section class="cardspage navcart">
+        <div id="cartContainer"></div>
+
+        <div class="cart-total-box">
+          <h3>Order Summary</h3>
+
+          <div class="total-row">
+            <span>Total Items:</span>
+            <span id="totalItems">0</span>
+          </div>
+
+          <div class="total-row">
+            <span>Grand Total:</span>
+            <span id="grandTotal">₹0</span>
+          </div>
+
+          <button class="checkout-btn">Proceed to Payment</button>
+        </div>
+      </section>
+      <script src="./js/cart.js"></script>
+    </div>
+  </body>
+</html>

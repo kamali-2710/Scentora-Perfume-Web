@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+.navabout {
+  margin-top: 150px;
+}
+.wrapper .contactpage {
+    margin-top: 20px;
+}
+} 
+@media (max-width: 576px) {
+.navabout {
+  margin-top: 100px;
+}
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login Page</title>
+    <link rel="icon" href="./img/title img.jpeg" />
+    <link rel="stylesheet" href="./css/adminlogin.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="loginform">
+        <h2>Admin Login</h2>
+        <div class="form-content">
+          <label for="">User</label>
+          <input
+            type="text"
+            placeholder="Admin"
+            id="user"
+          /><br />
+          <span id="usererr" class="errs"></span>
+          <label for="">Password</label>
+          <input type="password" placeholder="Admin54" id="pswd" /><br />
+          <span id="pswderr" class="errs"></span>
+        </div>
+        <button type="submit">Login</button>
+        <p>Not an Admin? <a href="../Scentora website/index.html">Go to user login</a></p>
+      </form>
+    </div>
+    <script src="./js/adminlogin.js"></script>
+  </body>
+</html>

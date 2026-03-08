@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.warranty {
+  padding: 70px 10%;
+}
+
+.title {
+  /* border: 1px solid; */
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 40px 0px 50px;
+  color: #c9a24d;
+}
+
+/* GRID */
+.warranty-box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* BOX DESIGN */
+.warranty-box {
+  background: #c9a24d15;
+  border-radius: 10px;
+  padding: 25px 28px;
+  transition: 0.3s ease;
+}
+
+.warranty-box:hover {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.121);
+  transform: translateY(-5px);
+}
+
+/* HEADINGS */
+.warranty-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c9a24d;
+  margin-bottom: 10px;
+}
+
+/* CONTENT */
+.warranty-box p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .warranty {
+    padding: 60px 6% 0px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin: 70px 0 40px;
+  }
+}
+@media (max-width: 576px) {
+  .warranty {
+    padding: 50px 5% 0;
+  }
+
+  .title {
+    font-size: 20px;
+    margin: 50px 0px 40px;
+  }
+
+  .warranty-box {
+    padding: 20px;
+  }
+
+  .warranty-box p {
+    font-size: 13px;
+  }
+}
