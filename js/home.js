@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
         Prdname: "Royal Oud",
         Price: 2500,
         Offer: 1999,
-        image: "./img/perfume1.jpg"
+        image: "./img/coolwater.webp"
       },
       {
         productid: 2,
         Prdname: "Midnight Musk",
         Price: 1800,
         Offer: 1499,
-        image: "./img/perfume2.jpg"
+        image: "./img/img1.jpg"
       }
     ];
 
