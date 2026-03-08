@@ -257,12 +257,12 @@ header .fa-bars {
 
 /* .......... */
 
-.card{
+.card {
   position: relative;
   overflow: hidden;
 }
 
-.icon-box{
+.icon-box {
   position: absolute;
   top: 10px;
   right: -100px;
@@ -272,25 +272,24 @@ header .fa-bars {
   transition: 0.8s;
 }
 
-.card:hover .icon-box{
-  right: 13px; 
+.card:hover .icon-box {
+  right: 13px;
 }
 
-.icon-box i{
+.icon-box i {
   /* border:1px solid; */
   background: white;
   padding: 10px 28px 4px 3px;
   border-radius: 50%;
   cursor: pointer;
-
 }
-.icon-box .fa-heart{
- font-size: 1.3rem;
- color: rgba(215, 18, 18, 0.737);
+.icon-box .fa-heart {
+  font-size: 1.3rem;
+  color: rgba(215, 18, 18, 0.737);
 }
-.icon-box .fa-share-nodes{
-  color:#f7bc19;
-   font-size: 1.1rem;
+.icon-box .fa-share-nodes {
+  color: #f7bc19;
+  font-size: 1.1rem;
 }
 
 /* cardpage */
@@ -667,7 +666,6 @@ header .fa-bars {
   transform: scale(1.1);
 }
 
-
 /* contact-detail-page */
 .condetails-page {
   /* border: 1px solid; */
@@ -898,7 +896,6 @@ textarea {
 
 /* media queries */
 @media (max-width: 768px) {
-
   header {
     width: 100%;
     padding: 10px 15px;
@@ -909,12 +906,62 @@ textarea {
   header .logo {
     /* border: 1px solid; */
     font-size: 1.2rem;
-    margin-right: 260px;
+    margin-right: 250px;
   }
-
+  header .fa-bars {
+    margin-left: 20px;
+  }
+  /* link */
   header .link {
     display: none;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #d7cfcf;
+    border-radius: 12px;
+    position: absolute;
+    top: 80px;
+    left: 25px;
+    width: 200px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px 0px;
+    transition: all 0.3s ease-in-out;
   }
+
+  header .link.show {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  header .link a {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  header .link a:hover {
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  header .link.show {
+    animation: slideIn 0.3s forwards;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   header .fa-bars {
     display: flex;
   }
@@ -1040,15 +1087,32 @@ textarea {
   /* HEADER */
   header {
     padding: 8px 10px;
+    gap: 30px;
   }
 
   header .logo {
     /* border: 1px solid; */
     font-size: 1rem;
     margin-right: 0px;
+    font-size: 1rem;
   }
   header .fa-bars {
     margin-top: 15px;
+    margin-left: 0px;
+    
+  }
+  header .link {
+     /* border: 1px solid; */
+    width: 160px;
+    top: 60px;
+    left:5px;
+    padding: 15px 0px;
+    gap: 20px;
+  }
+
+  header .link a {
+    font-size: 1rem;
+    padding: 10px 12px;
   }
   header nav {
     gap: 10px;
@@ -1056,8 +1120,11 @@ textarea {
 
   header nav i {
     font-size: 18px;
+    font-size: 1rem;
   }
-
+.cart a{
+   font-size: 1rem;
+}
   /* HOME CONTENT */
   .content {
     width: 90%;

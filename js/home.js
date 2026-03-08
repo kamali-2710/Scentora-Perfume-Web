@@ -291,5 +291,13 @@ if (btn) {
       emails.value = "";
     }
 
+
   })
+  const menuIcon = document.querySelector('.fa-bars'); // hamburger
+  const navLinks = document.querySelector('.link'); // menu links
+
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('show'); // toggle class to show/hide
+  });
+
 }
